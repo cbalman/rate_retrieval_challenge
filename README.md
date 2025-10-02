@@ -55,8 +55,7 @@ Example Request URL
 
 Send a GET request to the following endpoint. Note that the freightInfo array is JSON-encoded and URL-encoded within the query string.
 
-GET http://localhost:8000/api/rate?originCity=KEY%20LARGO&originState=FL&originZipcode=33037&originCountry=US&destinationCity=LOS%20ANGELES&destinationState=CA&destinationZipcode=90001&destinationCountry=US&UOM=US&freightInfo=%5B%7B%22qty%22:1,%22weight%22:100,%22weightType%22:%22each%22,%22length%22:40,%22width%22:40,%22height%22:40,%22class%22:100,%22hazmat%22:0,%22commodity%22:%22%22,%22dimType%22:%22PLT%22,%22stack%22:false%7D%5D
-
+GET http://localhost:8000/api/rates?originCity=KEY LARGO&originState=FL&originZipcode=33037&originCountry=US&destinationCity=LOS ANGELES&destinationState=CA&destinationZipcode=90001&destinationCountry=US&UOM=US&freightInfo=[{"qty":1,"weight":100,"weightType":"each","length":40,"width":40,"height":40,"class":100,"hazmat":0,"commodity":"","dimType":"PLT","stack":false}]
 # 🧪 Running Unit Tests
 
 The solution includes a comprehensive suite of Unit Tests to guarantee the reliability of the authentication mechanism and business logic. These tests utilize Mocking for network isolation (Guzzle) and Dependency Injection for effective unit testing.
